@@ -1,7 +1,7 @@
 import random
 from TwitterAPI import TwitterAPI
 api = TwitterAPI('ha6n4e9gtH493V7fM8BI40ah4', 'TJNFLmXroylT0WVOohZnCAwp2gDHGWgzmnUDgKps4pKa2h42zy', '3845649433-jU8cxYET5DHYHSjzxfVwpntNYCX5ttvfUn8Fxx7', 'AOo8swxsjLhFoOUktJrlMHODVKzWjVh5KECcgU57d1Pci')
-twitterData = api.request('lists/statuses', {'owner_screen_name':'samisjewish', 'slug':'TMcelebrities', 'count':'10'})
+twitterData = api.request('lists/statuses', {'owner_screen_name':'samisjewish', 'slug':'TMcelebrities', 'count':'20'})
 
 class Game:
     def __init__(self, users, tweets):
