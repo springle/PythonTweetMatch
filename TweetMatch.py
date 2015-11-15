@@ -17,9 +17,11 @@ class Game:
         return len(self.tweets)
 
     def drawCard(self):
+        # Returns a Card object using the most recent remaining tweet 
         return Card(self)
 
     def takeTurn(self):
+        # Draws a card, lets the user guess, then repeats until there are no remaining tweets 
         if self.remainingTweets() == 0:
             self.endGame()
         else:
